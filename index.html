@@ -5,8 +5,283 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+    <header class="page-header">
+      <img class="logo" src="" alt="Логотип Глейси">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html" >Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Доставка и оплата</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">О компании</a>
+          </li>
+        </ul>
+        <ul class="nav-list nav-user">
+          <a class="nav-phone" href="tel:88005558628">8 800 555-86-28</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Вход</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" placeholder="Пусто">
+              <span class="visually-hidden">
+                Корзина
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+      <main class="main-index">
+        <h1 class="visually-hidden">Глейси</h1>
+          <section>
+           <h2>Нежный пломбир с клубничным джемом</h2>
+            <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
+              <span class="visually-hidden">Фотогалерея</span>
+                <img class="slider-image" src="" alt="Варианты мороженого" >
+                 <button class="slider-button slider-prev" type="button">
+                   <span class="visually-hidden">Предыдущее фото</span>
+                 </button>
+                  <button class="slider-button slider-next" type="button">
+                    <span class="visually-hidden">Следующее фото</span>
+                  </button>
+                  <ol class="slider-pagination">
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                        <span class="visually-hidden">1 фото</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">2 фото</span>
+                      </button>
+                    </li>
+                    <li class="slider-pagination-item">
+                      <button class="slider-pagination-button" type="button">
+                        <span class="visually-hidden">3 фото</span>
+                      </button>
+                    </li>
+                  </ol>
+          </section>
+                  <ul class="pagination">
+                    <li class="pagination-item">
+                      <a class="pagination-link pagination-prev pagination-disabled">
+                        <span class="visually-hidden">Предыдущая страница</span>
+                      </a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link pagination-current">1</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link" href="#">2</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link" href="#">3</a>
+                  </ul>
+                  <section class="social-icons">
+                    <h2 class="visually-hidden">Социальные сети</h2>
+                    <ul class="social-list">
+                      <li class="social-item">
+                        <a class="button" href="#">
+                          <span class="visually-hidden">ВКонтакте</span>
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a class="button" href="#">
+                          <span class="visually-hidden">Фейсбук</span>
+                        </a>
+                      </li>
+                      <li class="social-item">
+                        <a class="button" href="#">
+                          <span class="visually-hidden">Инстаграм</span>
+                        </a>
+                      </li>
+                    </ul>
+                  <section>
+                    <h3>Заказывайте мороженое и получайте подарки!</h3>
+                    <div class="variable">
+                      <h4>Малинка даром!</h4>
+                      <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                      <a class="button" href="#">Хочу подарок</a>
+                    </div>
+                    <div class="variable">
+                      <h4>Маршмеллоу даром!</h4>
+                      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+                      <a class="button" href="#">Хочу подарок</a>
+                    </div>
+                  </section>
+                  <section>
+                    <h3>Попробуйте самые популярные вкусы нашего мороженого</h3>
+                    <ul class="product-list">
+                      <li class="product-card">
+                        <a class="product-card-link" href="#">
+                          <img class="product-card-image" src="" alt="">
+                          <h3 class="product-card-title">Малинка</h3>
+                        </a>
+                        <p>Сливочное мороженое с малиновым джемом</p>
+                        <b class="product-card-price">310 ₽/кг</b>
+                        <a href="#" class="product-card-button button"><span class="visually-hidden">Купить</span></a>
+                      </li>
+                      <li class="product-card">
+                        <a class="product-card-link" href="#">
+                          <img class="product-card-image" src="" alt="">
+                          <h3 class="product-card-title">Фисташка</h3>
+                        </a>
+                        <p>Фисташковый пломбир с кусочками шоколада</p>
+                        <b class="product-card-price">340 ₽/кг</b>
+                        <a href="#" class="product-card-button button"><span class="visually-hidden">Купить</span></a>
+                      </li>
+                      <li class="product-card">
+                        <a class="product-card-link" href="#">
+                          <img class="product-card-image" src="" alt="">
+                          <h3 class="product-card-title">Черника</h3>
+                        </a>
+                        <p>Крем-брюле с черничным джемом</p>
+                        <b class="product-card-price">330 ₽/кг</b>
+                        <a href="#" class="product-card-button button"><span class="visually-hidden">Купить</span></a>
+                      </li>
+                      <li class="product-card">
+                        <a class="product-card-link" href="#">
+                          <img class="product-card-image" src="" alt="">
+                          <h3 class="product-card-title">Бабл-гам</h3>
+                        </a>
+                        <p>Ванильный пломбир со сладкой посыпкой</p>
+                        <b class="product-card-price">320 ₽/кг</b>
+                        <a href="#" class="product-card-button button"><span class="visually-hidden">Купить</span></a>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="advantages">
+                    <h2 class="visually-hidden">Преимущества</h2>
+                    <ul class="advantages-list">
+                      <li class="advantages-item">
+                        <span class="visually-hidden">Производство</span>
+                        <p class="advantages-description">Все наше мороженое изгатавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                      </li>
+                      <li class="advantages-item">
+                        <span class="visually-hidden">Состав</span>
+                        <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
+                          и добавки произведены из натурального сырья.</p>
+                      </li>
+                      <li class="advantages-item">
+                        <span class="visually-hidden">Поставщики</span>
+                        <p class="advantages-description">Закупка ингредиентов производится только
+                          у проверенных фермерских хозяйств, с которыми
+                          нас связывает долговременное сотрудничество.</p>
+                      </li>
+                      <li class="advantages-item">
+                        <span class="visually-hidden">Хранение и перевозка</span>
+                        <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке, который не дает мороженому растаять и позволяет сохранить превосходный вкус.</p>
+                      </li>
+                    </ul>
+                  </section>
+                  <p>
+                  <section>
+                    <a href="#" class="info-cite">Новое в нашем блоге</a>
+                    <a href="#" class="info-cite-news"><span>10 способов сервировки фруктовых щербетов к столу</span></a>
+                  </section>
+                  </p>
+                  <section class="newsletter">
+                    <span class="visually-hidden">Поодписка на рассылку</span>
+                    <p>Подпишитесь на нашу сладкую рассылку и будьте всегда
+                      в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                    <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                        <label class="visually-hidden" for="newsletter-email">Email</label>
+                        <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+                      <button class="button newsletter-button" type="submit">
+                        <span class="visually-hidden">Отправить</span>
+                      </button>
+                    </form>
+                  </section>
+                  <section>
+                    <h2>Доставка любимого мороженого на дом</h2>
+                    <p>Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
+                    <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+                      <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+                      <p class="appointment-form-date">
+                        <span class="form-label form-label-icon">
+                          <label for="appointment-date">
+                            Дата</label>
+                          <button class="info" type="button">
+                            <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+                        </span>
+                        <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
+                      </p>
+                      <p class="appointment-form-phone">
+                        <label for="appointment-form-phone">
+                          Телефон
+                        </label>
+                        <input type="text" id="appointment-form-phone" name="appointment-form-phone" placeholder="+7 800 999-00-00">
+                      </p>
+                      <p class="appointment-form-address">
+                        <label for="appointment-address">
+                          Адрес
+                          <button class="info" type="button">
+                            <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+                        </label>
+                        <input class="field" type="text" id="appointment-address" name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8">
+                      </p>
+                      <button class="button" type="submit">Записаться</button>
+                    </form>
+                   </section>
+                    <section class="contacts">
+                      <h2 class="visually-hidden">Контакты</h2>
+                      <address class="contacts-address">
+                        <span>Адрес главного офиса и офлайн-магазина:</span>
+                        <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                        <span>Для заказов по телефону:</span>
+                        <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                        <span>(с 10 до 20 ежедневно)</span>
+                      </address>
+                      <a class="contacts-link" href="#">Форма обратной связи</a>
+                    </section>
+      </main>
+      <section class="footer-social">
+        <h2 class="visually-hidden"></h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="documents">
+            <img src="" class="academy-logo" alt="">
+            <a class="button" href="#"><b class="documents-item">Для поставщиков</b></a>
+          </li>
+          <li class="">
+            <a class="button" href="#"><span class="documents-item">О производстве</span></a>
+          </li>
+          <li class="">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+            <a class="button" href="#"><span class="documents-item">Наши документы</span></a>
+          </li>
+          <li class="">
+            <a class="button" href="#"><span class="documents-item">Экологические стандарты</span></a>
+          </li>
+        </ul>
+        <img src="" class="academy-logo" alt="">
+        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy 2021</a></p>
+      </section>
   </body>
 </html>
