@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
  <body>
-  <header class="page-header"> <img class="logo" src="№" alt="Логотип Глейси">
+  <header class="page-header"> <img class="logo" src="img/pictures/logo.png" width="137" height="56" alt="Логотип Глейси">
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item"> <a class="nav-link" href="catalog.html">Каталог</a> </li>
@@ -15,7 +16,7 @@
       <ul class="nav-list nav-user">
         <li class="nav-item">
           <a class="nav-link" href="#">
-            <span class="visually-hidden">Поиск</span>
+            <span class="nav-link-search">Поиск</span>
           </a>
         </li>
         <li class="nav-item">
@@ -36,7 +37,7 @@
       <h2>Нежный пломбир с клубничным джемом</h2>
       <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
       <span class="visually-hidden">Фотогалерея</span>
-      <img class="slider-image" src="#" alt="Варианты мороженого">
+      <img class="slider-image" src="img/pictures/rasberry-milk.jpg" width="306" height="507" alt="Варианты мороженого">
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущее фото</span>
       </button>
@@ -97,7 +98,7 @@
        <ul class="product-list">
          <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="#" alt="">
+              <img class="product-card-image" src="img/pictures/ice/raspberry.jpg" width="168" height="168" alt="малиновое мороженое">
               <h3 class="product-card-title">Малинка</h3>
             </a>
             <p>Сливочное мороженое с малиновым джемом</p>
@@ -108,7 +109,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="#" alt="">
+              <img class="product-card-image" src="img/pictures/ice/pistachios.jpg" width="168" height="168" alt="фисташковое мороженое">
               <h3 class="product-card-title">Фисташка</h3>
             </a>
             <p>Фисташковый пломбир с кусочками шоколада</p>
@@ -119,7 +120,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="#" alt="">
+              <img class="product-card-image" src="img/pictures/ice/blueberry.jpg"  width="168" height="168" alt="черничное мороженое">
               <h3 class="product-card-title">Черника</h3>
             </a>
             <p>Крем-брюле с черничным джемом</p>
@@ -130,7 +131,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="#" alt="">
+              <img class="product-card-image" src="img/pictures/ice/gum.jpg" width="168" height="168" alt="мороженое Бабл-гам">
               <h3 class="product-card-title">Бабл-гам</h3>
             </a>
             <p>Ванильный пломбир со сладкой посыпкой</p>
@@ -162,7 +163,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class = "info-news">
       <a href="#" class="info-cite">Новое в нашем блоге</a>
       <a href="#" class="info-cite-news">
         <span>10 способов сервировки фруктовых щербетов к столу</span>
@@ -179,7 +180,7 @@
           </button>
       </form>
     </section>
-    <section>
+    <section class="appointment">
       <h2>Доставка любимого мороженого на дом</h2>
       <p>Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
       <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -233,7 +234,8 @@
       </li>
     </ul>
     <ul>
-      <li class="documents"> <img src="#" class="academy-logo" alt="лого">
+      <li class="documents">
+        <img src="img/pictures/like.svg" class="like" alt="сердечко">
         <a class="button" href="#">
           <b class="documents-item">Для поставщиков</b>
         </a>
@@ -254,7 +256,7 @@
         </a>
       </li>
     </ul>
-    <img src="#" class="academy-logo" alt="ллоготип">
+    <img src="img/pictures/logo-footer.png" class="academy-logo" alt="логотип">
     <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy 2021</a></p>
   </footer>
  </body>
