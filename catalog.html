@@ -39,7 +39,7 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class= "main-container main-index">
     <header class="inner-header">
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
@@ -57,7 +57,7 @@
     <section class="catalog-products">
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
+          <label class="catalog-sorting" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
             <option value="popular">по популярности</option>
           </select>
@@ -149,7 +149,7 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button-apply" type="submit">Применить</button>
+        <button class="button button-apply" type="submit">Применить</button>
       </form>
       <ul class="product-list">
         <li class="product-card">
@@ -261,6 +261,7 @@
           <a href="#" class="product-card-button button"><span class="visually-hidden">Купить</span></a>
         </li>
       </ul>
+      <div class="pagination-section">
       <button class="button pagination-show-more" type="button">Показать ещё</button>
       <ul class="pagination">
         <li class="pagination-item">
@@ -284,44 +285,55 @@
           </a>
         </li>
       </ul>
+    </div>
     </section>
   </main>
-    <footer class="footer-social">
-      <h2 class="visually-hidden"></h2>
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Фейсбук</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="button" href="#">
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li class="documents">
-          <img src="img/like.svg" class="like" alt="сердечко">
-          <a class="button" href="#"><b class="documents-item documents-item-like">Для поставщиков</b></a>
-        </li>
-        <li class="documents">
-          <a class="button" href="#"><span class="documents-item">О производстве</span></a>
-        </li>
-        <li class="documents">
-          <a class="button" href="#"><span class="documents-item">Наши документы</span></a>
-        </li>
-        <li class="documents">
-          <a class="button" href="#"><span class="documents-item">Экологические стандарты</span></a>
-        </li>
-      </ul>
-      <img src="img/logo_htmlacademy.svg" class="academy-logo" alt="логотип">
-      <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy 2021</a></p>
-    </footer>
+  <footer class="footer-social">
+    <div class="page-footer-container">
+    <h2 class="visually-hidden"></h2>
+    <ul class="social-list">
+      <li class="social-item">
+        <a class="button" href="#"> <span class="visually-hidden">ВКонтакте</span> </a>
+      </li>
+      <li class="social-item">
+        <a class="button" href="#"> <span class="visually-hidden">Фейсбук</span> </a>
+      </li>
+      <li class="social-item">
+        <a class="button" href="#"> <span class="visually-hidden">Инстаграм</span> </a>
+      </li>
+    </ul>
+    <ul class="documents">
+      <div class="documents-list-section">
+      <li class="documents-list">
+        <img src="img/like.svg" class="like" alt="сердечко">
+        <a class="button" href="#">
+          <b class="documents-item documents-item-like">Для поставщиков</b>
+        </a>
+      </li>
+      <li class="documents-list">
+        <a class="button" href="#">
+          <span class="documents-item">О производстве</span>
+        </a>
+      </li>
+    </div>
+    <div class = "documents-list-unit">
+      <li class="documents-list">
+        <a class="button" href="#">
+          <span class="documents-item">Наши документы</span>
+        </a>
+      </li>
+      <li class="documents-list">
+        <a class="button" href="#">
+          <span class="documents-item">Экологические стандарты</span>
+        </a>
+      </li>
+    </div>
+    </ul>
+    <div class="logo-info">
+    <img src="img/logo_htmlacademy.svg" class="academy-logo" alt="логотип">
+    <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy 2021</a></p>
+    </div>
+  </div>
+  </footer>
 </body>
 </html>
