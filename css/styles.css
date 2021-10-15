@@ -567,6 +567,7 @@ body {
  .breadcrumbs{
    display: flex;
    flex-direction: row;
+   padding-left: 0;
  }
 
 .breadcrumbs-item{
@@ -584,8 +585,7 @@ body {
 
 .catalog-filter {
   display: flex;
-  flex-direction: row;
-  width: 807px;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-group{
@@ -594,6 +594,14 @@ body {
   line-height: 20px;
   width: 196px;
   border: none;
+}
+
+.catalog-filter-group-fatness {
+  width: 367px;
+}
+
+.catalog-filter-group-filler {
+  width: 596px;
 }
 
 .catalog-sorting{
@@ -614,10 +622,13 @@ body {
   border: 2px solid #FCFCFC;
   border-radius: 20px;
   background-color: rgba(252, 252, 252, 0.3);
+  width: 187px;
+  height: 36px;
 }
 
 .pagination{
   display: flex;
+  padding-left: 0;
 }
 
 .pagination-section {
