@@ -127,16 +127,6 @@ body {
   border-style: none;
 }
 
-/* .slider-next {
-  background-image: url("../img/right.svg");
-  background-repeat: no-repeat;
-}
-
-.slider-prev {
-  background-image: url("../img/left.svg");
-  background-repeat: no-repeat;
-} */
-
 .slider-section {
   display: flex;
   flex-direction: column;
@@ -280,12 +270,23 @@ body {
    display: block;
  }
 
+ .suggestions-name {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  width: 579px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 56px;
+ }
+
  .product-list {
     display: flex;
     flex-wrap: wrap;
     width: 1170px;
-    margin-bottom: 80px;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
     list-style-type: none;
  }
@@ -300,6 +301,7 @@ body {
    border-radius: 8px;
    text-align: center;
    margin-right: 30px;
+   margin-bottom: 40px;
  }
 
  .product-card-link {
@@ -336,6 +338,7 @@ body {
    border-radius: 16px;
    margin-bottom: 80px;
    min-height: 480px;
+   margin-top: 60px;
   }
 
  .advantages-wrapper {
@@ -602,6 +605,12 @@ body {
 
  .social-item {
   list-style-type: none;
+  min-width: 24px;
+  min-height: 24px;
+  margin-right: 16px;
+ }
+ .social-item:nth-child(3n) {
+   margin-right: 0;
  }
 
  .social-list {
@@ -725,6 +734,12 @@ body {
   padding-left: 0;
 }
 
+.pagination-current {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
 .pagination-section {
   display: flex;
   flex-direction: row;
@@ -732,7 +747,9 @@ body {
 
 .pagination-item {
   list-style-type: none;
-  margin-right: 10px;
+  margin-right: 8px;
+  width: 10px;
+  height: 20px;
 }
 
 .pagination-show-more {
@@ -744,6 +761,7 @@ body {
   height: 44px;
   margin: auto;
   margin-bottom: 81px;
+  margin-top: 17px;
 }
 
 .pagination-link {
