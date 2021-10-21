@@ -112,46 +112,54 @@
          <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="img/ice/raspberry.jpg" width="168" height="168" alt="малиновое мороженое">
-              <h3 class="product-card-title">Малинка</h3>
             </a>
+            <div class="product-card-content">
+              <h3 class="product-card-title">Малинка</h3>
             <p class="product-card-detail">Сливочное мороженое с малиновым джемом</p>
             <b class="product-card-price">310 ₽/кг</b>
             <a href="#" class="product-card-button button">
               <span class="visually-hidden">Купить</span>
             </a>
+          </div>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="img/ice/pistachios.jpg" width="168" height="168" alt="фисташковое мороженое">
-              <h3 class="product-card-title">Фисташка</h3>
             </a>
+            <div class="product-card-content">
+              <h3 class="product-card-title">Фисташка</h3>
             <p class="product-card-detail">Фисташковый пломбир с кусочками шоколада</p>
             <b class="product-card-price">340 ₽/кг</b>
             <a href="#" class="product-card-button button">
               <span class="visually-hidden">Купить</span>
             </a>
+          </div>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="img/ice/blueberry.jpg"  width="168" height="168" alt="черничное мороженое">
-              <h3 class="product-card-title">Черника</h3>
             </a>
+            <div class="product-card-content">
+              <h3 class="product-card-title">Черника</h3>
             <p class="product-card-detail">Крем-брюле с черничным джемом</p>
             <b class="product-card-price">330 ₽/кг</b>
             <a href="#" class="product-card-button button">
               <span class="visually-hidden">Купить</span>
             </a>
+          </div>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="img/ice/gum.jpg" width="168" height="168" alt="мороженое Бабл-гам">
+              </a>
+              <div class="product-card-content">
               <h3 class="product-card-title">Бабл-гам</h3>
-            </a>
             <p class="product-card-detail">Ванильный пломбир со сладкой посыпкой</p>
             <b class="product-card-price">320 ₽/кг</b>
             <a href="#" class="product-card-button button">
               <span class="visually-hidden">Купить</span>
             </a>
+            </div>
           </li>
         </ul>
     </section>
@@ -204,22 +212,23 @@
         <h2 class="appointment-suggestions">Доставка любимого мороженого на дом</h2>
         <p class="appointment-description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
       </div>
-      <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="appointment-border">
+      <div class="appointment-border">
         <p class="appointment-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <p class="appointment-form-date">
+      <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="field-group appointment-form-date">
           <span class="form-label form-label-icon"></span>
-            <label for="appointment-date">Дата</label>
+            <label for="appointment-date">Дата
             <button class="info" type="button">
               <span class="visually-hidden">Посмотреть дополнительную информацию</span>
             </button>
+          </label>
             <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
           </p>
-          <p class="appointment-form-phone">
-            <label for="appointment-form-phone"> Телефон </label>
-            <input type="text" id="appointment-form-phone" name="appointment-form-phone" placeholder="+7 800 999-00-00">
+          <p class="field-group appointment-form-phone">
+            <label for="appointment-phone"> Телефон </label>
+            <input type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00">
           </p>
-          <p class="appointment-form-address">
+          <p class="field-group appointment-form-address">
             <label for="appointment-address"> Адрес
               <button class="info" type="button" id="appointment-address">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
