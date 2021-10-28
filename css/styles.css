@@ -182,11 +182,15 @@ body {
 }
 
 .slider-image {
-  z-index: 1;
   position: relative;
 }
 
-.slider-image::before {
+.slider-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.slider-wrapper::before {
   position: absolute;
   content: "";
   width: 312px;
@@ -203,6 +207,7 @@ body {
   margin-top: 237px;
   border-style: none;
   background-color: rgba(252, 252, 252, 0.3);
+  padding: 0;
 }
 
 .slider-section {
