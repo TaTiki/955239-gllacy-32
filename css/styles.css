@@ -401,6 +401,7 @@ padding-right: 41px;
   padding: 48px;
   display: none;
   cursor: context-menu;
+  text-align: center;
 }
 
 .popover-title {
@@ -677,7 +678,7 @@ padding-right: 41px;
   width: 31px;
   height: 31px;
   display: inline-block;
-  border: 1px solid #ff2f64;
+  border: 2px solid #ff2f64;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1462,6 +1463,7 @@ padding-right: 41px;
   padding: 0;
   vertical-align: top;
   border: 1px solid #B9B9B9;
+  width: 324px;
 }
 
 .popover-field input {
@@ -1469,7 +1471,7 @@ padding-right: 41px;
   line-height: 24px;
   color: #323232;
   min-height: 48px;
-  width: 296px;
+  width: 280px;
   border: none;
   padding: 0;
   outline: none;
@@ -1477,6 +1479,7 @@ padding-right: 41px;
   line-height: 20px;
   font-family: "Inter", "Arial", sans-serif;
   padding-left: 16px;
+  padding-right: 28px;
 }
 
 .popover-field input:focus + label {
@@ -1665,7 +1668,7 @@ padding-right: 41px;
 }
 
 .popover-search-btn input {
-  width: 312px;
+  width: 280px;
   height: 48px;
   padding: 0;
   outline: none;
@@ -1988,6 +1991,7 @@ padding-right: 41px;
 
 .pagination-current {
   background-color: #FCFCFC;
+  margin-bottom: -8px;
 }
 
 .pagination-section {
@@ -2013,7 +2017,8 @@ padding-right: 41px;
   list-style-type: none;
   min-width: 10px;
   min-height: 20px;
-  margin: 0 1px;
+  margin-right: 3px;
+  margin-left: -1px;
 }
 
 .pagination-link:not(.pagination-prev, .pagination-next):hover {
@@ -2039,7 +2044,7 @@ padding-right: 41px;
   background-size: 6px 11px;
   background-repeat: no-repeat;
   background-position: center;
-  padding-left: 2px;
+  padding-left: 29px;
   margin: 0;
 }
 
@@ -2066,7 +2071,7 @@ padding-right: 41px;
   margin: auto;
   margin-bottom: 128px;
   margin-top: 17px;
-  margin-right: 326px;
+  margin-right: 302px;
   border: none;
 }
 
