@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/styles.css"> </head>
-  <body>
+  <body class="page-pink page-blue page-yellow">
     <header class="page-header">
       <nav class="nav">
-        <img class="logo" src="img/logo-gllacy.svg" width="137" height="56" alt="Логотип Глейси">
+        <img class="logo" src="img/logo-gllacy.svg" width="137" height="56" alt="Логотип Глейси.">
         <ul class="nav-list">
           <li class="nav-item">
             <a class="nav-link" href="catalog.html">Каталог</a>
@@ -33,10 +33,13 @@
               <span class="visually-hidden">Поиск</span>
             </a>
             <div class="popover popover-search">
+              <form action="#" method="get">
               <div class="popover-search-btn">
-                <input id="search" type="text" name="search" placeholder="Поиск по сайту">
-                <img class="search-close" src="img/close-popover.svg" width="10" height="10" alt="закрыть">
+                <label for="search" class="visually-hidden">Поиск</label>
+                  <input id="search" type="text" name="search" placeholder="Поиск по сайту">
+                  <span class="search-close"></span>
               </div>
+            </form>
             </div>
           </li>
           <li class="nav-item">
@@ -48,10 +51,12 @@
               <p class="popover-title popover-names">Личный кабинет</p>
               <form action="#" method="get">
                 <div class="popover-field">
-                  <input id="login" type="email" name="login" placeholder="Электронная почта">
+                  <label for="login"></label>
+                    <input id="login" type="email" name="login" placeholder="email@example.com">
                 </div>
-                <div class="popover-field">
-                  <input id="password" type="password" name="password" placeholder="Пароль">
+                <div class="popover-field popover-field-login">
+                  <label for="password"></label>
+                    <input id="password" type="password" name="password" placeholder="••••••">
                 </div>
                 <div class="popover-form-login">
                   <input class="button popover-button-submit" type="submit" value="Войти">
@@ -95,7 +100,7 @@
               <span class="visually-hidden">Предыдущее фото</span>
             </button>
             <div class="slider-wrapper">
-              <img class="slider-image" src="img/rasberry-milk.png" width="306" height="507" alt="Варианты мороженого">
+              <img class="slider-image" src="img/rasberry-milk.png" width="306" height="507" alt="Варианты мороженого.">
             </div>
             <button class="slider-button slider-next" type="button">
               <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,8 +110,8 @@
             </button>
           </div>
           <div class="slider-image-group">
-            <img class="slider-image-mini" src="img/milk-mini-banana.png" width="100" height="150" alt="Варианты мороженого">
-            <img class="slider-image-mini" src="img/milk-min-pistachion.png" width="100" height="150" alt="Варианты мороженого">
+            <img class="slider-image-mini" src="img/milk-mini-banana.png" width="100" height="150" alt="Варианты мороженого.">
+            <img class="slider-image-mini" src="img/milk-min-pistachion.png" width="100" height="150" alt="Варианты мороженого.">
           </div>
         </div>
       </section>
@@ -166,7 +171,7 @@
         <div class="promo-wrapper">
           <div class="promo-item promo-raspberries">
             <h4 class="promo-option">Малинка даром!</h4>
-            <p class="promo-description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <p class="promo-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class=" button white-button" href="#">Хочу подарок</a>
           </div>
           <div class="promo-item promo-marshmallow">
@@ -178,12 +183,12 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="product-name">
         <h3 class="suggestions-name">Попробуйте самые популярные вкусы нашего мороженого</h3>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/ice/raspberry.png" width="168" height="168" alt="малиновое мороженое">              </a>
+              <img class="product-card-image" src="img/ice/raspberry.png" width="168" height="168" alt="малиновое мороженое.">              </a>
             <div class="product-card-content">
               <h3 class="product-card-title">Малинка</h3>
               <p class="product-card-detail">Сливочное мороженое с малиновым джемом</p>
@@ -200,7 +205,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/ice/pistachios.png" width="168" height="168" alt="фисташковое мороженое">              </a>
+              <img class="product-card-image" src="img/ice/pistachios.png" width="168" height="168" alt="фисташковое мороженое.">              </a>
             <div class="product-card-content">
               <h3 class="product-card-title">Фисташка</h3>
               <p class="product-card-detail">Фисташковый пломбир с кусочками шоколада</p>
@@ -217,7 +222,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/ice/blueberry.png" width="168" height="168" alt="черничное мороженое">              </a>
+              <img class="product-card-image" src="img/ice/blueberry.png" width="168" height="168" alt="черничное мороженое.">              </a>
             <div class="product-card-content">
               <h3 class="product-card-title">Черника</h3>
               <p class="product-card-detail">Крем-брюле<br> с черничным джемом</p>
@@ -234,7 +239,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/ice/gum.png" width="168" height="168" alt="мороженое Бабл-гам">              </a>
+              <img class="product-card-image" src="img/ice/gum.png" width="168" height="168" alt="мороженое Бабл-гам.">              </a>
             <div class="product-card-content">
               <h3 class="product-card-title">Бабл-гам</h3>
               <p class="product-card-detail">Ванильный пломбир<br> со сладкой посыпкой</p>
@@ -324,8 +329,7 @@
               ерунды. Честно =)</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
-              id="newsletter-email" required>
+              <input class="brim" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email">
               <button class="button newsletter-button" type="submit">Отправить</button>
             </form>
           </div>
@@ -346,19 +350,19 @@
             <p class="field-group appointment-form-date">
               <span class="form-label form-label-icon">
             <label for="appointment-date">Дата
-              <button class="info" type="button" id="appointment-date">
+              <button class="info" type="number" id="appointment-date">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
-             </label>
+            </label>
               </span>
-              <input class="field" type="text" name="appointment-date" placeholder="01.04.2020">
+              <input class="field" type="number" name="appointment-date" id="appointment-date" placeholder="01.04.2020">
             </p>
             <p class="field-group appointment-form-phone">
               <span class="form-label form-label-icon">
             <label for="appointment-phone"> Телефон
             </label>
           </span>
-              <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00"> </p>
+              <input class="field" type="number" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00"> </p>
             <p class="field-group appointment-form-address">
               <span class="form-label form-label-icon">
             <label for="appointment-address"> Адрес
@@ -367,7 +371,7 @@
               </button>
               </label>
               </span>
-              <input class="field" type="text" name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8"> </p>
+              <input class="field" type="text" name="appointment-address" id="appointment-address" placeholder="ул. Большая Конюшенная, 19/8"> </p>
             <button class="button appointment-button" type="submit">Отправить</button>
           </form>
         </div>
@@ -435,24 +439,28 @@
           </li>
         </ul>
         <div class="logo-info">
-          <img src="img/logo_htmlacademy.svg" class="academy-logo" alt="логотип">
+          <img src="img/logo-htmlacademy.svg" class="academy-logo" alt="логотип." width="93" height="27">
           <p class="about-text-logo">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
         </div>
       </div>
     </footer>
+    <section class="contacts-overlay">
+    <div class="overlay">
     <div class="contacts-form">
       <p class="contacts-form-title">Мы обязательно ответим вам!</p>
       <form action="https://echo.htmlacademy.ru/" method="get">
         <div class="contacts-form-btn">
           <input id="name" type="text" name="name" placeholder="Имя и фамилия"> </div>
         <div class="contacts-form-btn">
-          <input id="email" type="text" name="email" placeholder="email@example.com"> </div>
+          <input id="email" type="email" name="email" placeholder="email@example.com"> </div>
         <div class="contacts-form-btn">
           <textarea class="contacts-form-text" placeholder="В свободной форме"></textarea>
         </div>
         <button class="button contacts-form-button" type="submit">Отправить</button>
-        <button class=" contacts-form-close"></button>
+        <button class="contacts-form-close" type="button"></button>
       </form>
     </div>
+  </div>
+</section>
   </body>
 </html>
