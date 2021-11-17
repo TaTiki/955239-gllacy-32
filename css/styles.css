@@ -26,7 +26,7 @@ html {
   height: 100%;
 }
 
-body {
+.page{
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -35,19 +35,37 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #2D3440;
+}
+
+/* стили для розового слайла*/
+.page-pink {
   background-color: #FEAFC3;
 }
+
+.page-pink .slider-wrapper::before {
+  background-color: #FFCBD8;
+}
+
+/* стили для желтого слайла*/
 
 .page-yellow {
   background-color: #FCC850;
 }
 
+.page-yellow .slider-wrapper::before {
+  background-color: #FCDC92;
+  display: none;
+}
+
+/* стили для синего слайла*/
+
 .page-blue {
   background-color: #69A9FF;
 }
 
-.page-pink {
-  background-color: #FEAFC3;
+.page-blue .slider-wrapper::before {
+  background-color: #9FC8FF;
+  display: none;
 }
 
 .visually-hidden {
@@ -284,6 +302,47 @@ a.nav-link-dynamic:active {
   display: flex;
   position: relative;
 }
+/*стили  для .page-pink */
+
+.slider-section .slider-section-pink {
+  display: flex;
+}
+
+.slider-wrapper.slider-wrapper-pink {
+  display: flex;
+}
+
+.slider-image-group.slider-image-group-pink {
+  position: relative;
+}
+
+/*стили для .page-blue */
+
+.slider-section.slider-section-none {
+  display: none;
+}
+
+.slider-wrapper.slider-wrapper-none {
+  display: none;
+}
+
+.slider-image-group.slider-image-group-none {
+  display: none;
+}
+
+/*стили для .page-yellow  */
+
+.slider-wrapper.slider-wrapper-two-none {
+  display: none;
+}
+
+.slider-section.slider-section-two-none {
+  display: none;
+}
+
+.slider-image-group.slider-image-group-two-none {
+  display: none;
+}
 
 .slider-image {
   position: relative;
@@ -301,7 +360,6 @@ a.nav-link-dynamic:active {
   content: "";
   width: 312px;
   height: 312px;
-  background: #FFCBD8;
   border-radius: 50%;
   left: 50px;
 }
@@ -328,11 +386,11 @@ a.nav-link-dynamic:active {
   cursor: pointer;
 }
 
-.slider-prev svg path {
+.slider-prev path {
   fill:#FCFCFC;
 }
 
-.slider-next svg path {
+.slider-next path {
   fill:#FCFCFC;
 }
 
@@ -355,12 +413,12 @@ a.nav-link-dynamic:active {
   outline: 2px solid #FCFCFC;
 }
 
-.slider-prev:hover svg path {
+.slider-prev:hover path {
   fill:#2D3440;
   position: relative;
 }
 
-.slider-next:hover svg path {
+.slider-next:hover path {
   fill:#2D3440;
   position: relative;
 }
@@ -371,11 +429,11 @@ a.nav-link-dynamic:active {
   outline: 2px solid #2D3440;;
 }
 
-.slider-prev:focus svg path {
+.slider-prev:focus path {
   fill:#2D3440;
 }
 
-.slider-next:focus svg path {
+.slider-next:focus path {
   fill:#2D3440;
 }
 
@@ -553,7 +611,7 @@ padding-right: 41px;
 }
 
 .promo-marshmallow {
-  background-image: url("../img/marshmallow-decor.jpg");
+  background-image: url("../img/marshmallow-decoration.jpg");
   background-position: 332px 20px;
 }
 
@@ -662,6 +720,12 @@ padding-right: 41px;
 
 .product-card-link {
   text-decoration: none;
+  outline: 0;
+}
+
+.product-card-link:focus img {
+  outline: 1px solid #2D3440;
+  border-radius: 50%;
 }
 
 .product-card-title {
@@ -710,7 +774,7 @@ padding-right: 41px;
   justify-content: center;
 }
 
-.product-card-button svg path {
+.product-card-button path {
   fill: #FCFCFC;
 }
 
@@ -719,7 +783,7 @@ padding-right: 41px;
   background-color: #FCFCFC;
 }
 
-.product-card-button:hover svg path {
+.product-card-button:hover path {
   fill: #2D3440;
 }
 
@@ -728,7 +792,7 @@ padding-right: 41px;
   background-color: #ff2f64;
 }
 
-.product-card-button:focus svg path {
+.product-card-button:focus path {
   fill:#FCFCFC;
 }
 
@@ -736,7 +800,7 @@ padding-right: 41px;
   background-color: #B9B9B9;
 }
 
-.product-card-button:disabled svg path {
+.product-card-button:disabled path {
   fill: #565C66;
 }
 
@@ -1128,7 +1192,7 @@ padding-right: 41px;
   background-color: #FFCBD8;
   background-image: url("../img/icecream-contacts.jpg");
   border-radius: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 43px;
   display: flex;
   align-items: center;
   background-size: cover;
@@ -1450,7 +1514,7 @@ padding-right: 41px;
   align-items: center;
 }
 
-.social-item-svg svg path {
+.social-item-svg path {
   fill: #FCFCFC;
   background-repeat: no-repeat;
   background-size: 24px 24px;
@@ -1468,14 +1532,14 @@ padding-right: 41px;
 
 .information {
   list-style-type: none;
-  display: flex;
+  display: grid;
   margin-left: 324px;
-  margin-right: 120px;
-  flex-wrap: wrap;
+  margin-right: 169px;
   margin-top: 0;
-  margin-bottom: 0;
-  width: 418px;
+  width: 366px;
   padding: 0;
+  grid-template-columns: 128px 182px;
+  gap: 0 19px;
 }
 
 .information-item {
@@ -1489,10 +1553,7 @@ padding-right: 41px;
 }
 
 .information-list {
-  margin-right: -33px;
-  width: 182px;
   position: relative;
-  top: -2px;
 }
 
 .logo-info {
@@ -1506,6 +1567,7 @@ padding-right: 41px;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+  margin-top: 16px;
 }
 
 .academy-logo {
@@ -1522,12 +1584,12 @@ padding-right: 41px;
 .button-favorit::before {
   background-image: url("../img/like.svg");
   position: absolute;
-  right: 190px;
+  right: 140px;
   content: "";
   width: 14px;
   height: 14px;
   display: block;
-  top: 8px;
+  top: 6px;
 }
 
 .nav-client {
@@ -2032,8 +2094,24 @@ padding-right: 41px;
   border: 1px solid #000000;
 }
 
+.control-mark:hover {
+  border: 1px solid #FCFCFC;
+}
+
+.control-mark:focus {
+  outline: 2px solid #000000;
+}
+
+.control-mark:disabled {
+  border: 1px solid #B9B9B9;
+}
+
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
+}
+
+.control-input[type="radio"]:focus + .control-mark {
+  outline: 1px solid #000000;
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
@@ -2047,8 +2125,16 @@ padding-right: 41px;
   content: "";
 }
 
-.control-input:hover {
-  background-color: #ffffff;
+.control-input[type="radio"]:checked:hover + .control-mark::before {
+  background-color: #FCFCFC;
+}
+
+.control-input[type="checkbox"]:checked:focus + .control-mark {
+  outline: 1px solid #000000;
+}
+
+.control-input[type="radio"]:checked:disabled + .control-mark::before {
+  background-color: #B9B9B9;
 }
 
 .control-label {
@@ -2063,12 +2149,28 @@ padding-right: 41px;
   top: 2px;
 }
 
+.control-input[type="checkbox"]:hover + .control-mark:hover {
+  background-image: url("../img/checkbox-off-white.svg");
+}
+
+.control-input[type="checkbox"]:disabled + .control-mark:disabled {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../img/checkbox-on.svg");
   width: 16px;
   border: none;
   top: 2px;
   left: 2px;
+}
+
+.control-input[type="checkbox"]:checked:hover + .control-mark {
+  background-image: url("../img/checkbox-on-white.svg");
+}
+
+.control-input[type="checkbox"]:checked:disabled + .control-mark {
+  background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .control-input[type="checkbox"] + .control-mark {
